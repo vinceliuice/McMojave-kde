@@ -1,4 +1,4 @@
-<img src="https://github.com/vinceliuice/Qogir-kde/blob/master/images/logo.png" alt="Logo" align="right" /> Qogir KDE Theme
+<img src="https://github.com/vinceliuice/Sierra-gtk-theme/blob/imgs/logo.png" alt="Logo" align="right" /> McMojave KDE Theme
 ======
 
 McMojave kde is a MacOSX Mojave like theme for KDE Plasma desktop.
@@ -16,14 +16,6 @@ In this repository you'll find:
 ```sh
 ./install.sh
 ```
-
-## Recommendations
-
-- For better looking please use this pack with [Kvantum engine](https://github.com/tsujan/Kvantum/tree/master/Kvantum).
-
-  Run `kvantummanager` to choose and apply **Qogir-light** (or any other Qogir) theme.
-
-- Install [Qogir icon theme](https://github.com/vinceliuice/Qogir-icon-theme) for a more consistent and beautiful experience.
 
 ## Donate
 
