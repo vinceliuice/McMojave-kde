@@ -1,0 +1,17 @@
+[kdeglobals][KDE]
+widgetStyle=kvantum
+
+[kdeglobals][General]
+ColorScheme=McMojave-light
+
+[kdeglobals][Icons]
+Theme=McMojave
+
+[plasmarc][Theme]
+name=McMojave
+
+[kwinrc][org.kde.kdecoration2]
+theme=__aurorae__svg__McMojave-light
+
+[kcminputrc][Mouse]
+cursorTheme=breeze_cursors
