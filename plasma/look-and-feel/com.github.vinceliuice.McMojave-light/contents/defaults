@@ -5,10 +5,10 @@ widgetStyle=kvantum
 ColorScheme=McMojave-light
 
 [kdeglobals][Icons]
-Theme=McMojave
+Theme=McMojave-circle
 
 [plasmarc][Theme]
-name=McMojave
+name=McMojave-light
 
 [kwinrc][org.kde.kdecoration2]
 theme=__aurorae__svg__McMojave-light

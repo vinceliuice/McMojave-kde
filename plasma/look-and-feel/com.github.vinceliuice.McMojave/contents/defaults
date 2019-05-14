@@ -5,7 +5,7 @@ widgetStyle=kvantum
 ColorScheme=McMojave
 
 [kdeglobals][Icons]
-Theme=McMojave
+Theme=McMojave-circle
 
 [plasmarc][Theme]
 name=McMojave
