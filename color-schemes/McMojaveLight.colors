@@ -103,8 +103,8 @@ ForegroundPositive=39,174,96
 ForegroundVisited=127,140,141
 
 [General]
-ColorScheme=Breeze
-Name=McMojave-light
+ColorScheme=McMojaveLight
+Name=McMojaveLight
 shadeSortColumn=true
 
 [KDE]

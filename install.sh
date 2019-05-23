@@ -18,21 +18,29 @@ install() {
   local AURORAE_THEME=${AURPRAE_DIR}/${name}${color}
   local PLASMA_THEME=${PLASMA_DIR}/${name}${color}
   local LOOKFEEL_THEME=${LOOKFEEL_DIR}/${name}${color}
-  local SCHEMES_THEME=${SCHEMES_DIR}/${name}${color}.colors
-  local KVANTUM_THEME=${KVANTUM_DIR}/${name}
+  local KVANTUM_THEME=${KVANTUM_DIR}/${name}${color}
 
   [[ -d ${AURORAE_THEME} ]] && rm -rf ${AURORAE_THEME}
   [[ -d ${PLASMA_THEME} ]] && rm -rf ${PLASMA_THEME}
   [[ -d ${LOOKFEEL_THEME} ]] && rm -rf ${LOOKFEEL_THEME}
-  [[ -d ${SCHEMES_THEME} ]] && rm -rf ${SCHEMES_THEME}
+  [[ -d ${SCHEMES_DIR}/McMojave.colors ]] && rm -rf ${SCHEMES_DIR}/McMojave.colors
+  [[ -d ${SCHEMES_DIR}/McMojaveLight.colors ]] && rm -rf ${SCHEMES_DIR}/McMojaveLight.colors
   [[ -d ${KVANTUM_THEME} ]] && rm -rf ${KVANTUM_THEME}
 
   cp -ur ${SRC_DIR}/aurorae/themes/${name}${color}                                   ${AURORAE_DIR}
-  cp -ur ${SRC_DIR}/color-schemes/${name}${color}.colors                             ${SCHEMES_DIR}
-  cp -ur ${SRC_DIR}/Kvantum/${name}                                                  ${KVANTUM_DIR}
+  cp -ur ${SRC_DIR}/Kvantum/${name}${color}                                          ${KVANTUM_DIR}
   cp -ur ${SRC_DIR}/plasma/desktoptheme/${name}${color}                              ${PLASMA_DIR}
-  cp -ur ${SRC_DIR}/color-schemes/${name}${color}.colors                             ${PLASMA_DIR}/${name}${color}/colors
+
+
   cp -ur ${SRC_DIR}/plasma/look-and-feel/com.github.vinceliuice.${name}${color}      ${LOOKFEEL_DIR}
+
+  [[ ${color} == '' ]] && \
+  cp -ur ${SRC_DIR}/color-schemes/McMojave.colors                                    ${SCHEMES_DIR} && \
+  cp -ur ${SRC_DIR}/color-schemes/McMojave.colors                                    ${PLASMA_DIR}/${name}/colors
+
+  [[ ${color} == '-light' ]] && \
+  cp -ur ${SRC_DIR}/color-schemes/McMojaveLight.colors                               ${SCHEMES_DIR} && \
+  cp -ur ${SRC_DIR}/color-schemes/McMojaveLight.colors                               ${PLASMA_DIR}/${name}-light/colors
 }
 
 echo "Installing 'McMojave kde themes'..."
