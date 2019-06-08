@@ -523,13 +523,12 @@ text.shadow=0
 
 [ToolTip]
 inherits=GenericFrame
-frame=true
-frame.top=0
-frame.bottom=0
-frame.left=0
-frame.right=0
+frame.top=3
+frame.bottom=3
+frame.left=3
+frame.right=3
 interior=true
-text.shadow=1
+text.shadow=0
 text.margin=1
 text.margin.top=10
 text.margin.bottom=10
