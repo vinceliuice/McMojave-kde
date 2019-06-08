@@ -1,5 +1,5 @@
 [%General]
-author=Tsu Jan
+author=Vince Liuice
 comment=A dark theme with translucency similar to the style of macOS Mojave
 x11drag=all
 alt_mnemonic=true
@@ -291,16 +291,15 @@ indicator.size=8
 text.shadow=false
 
 [TabFrame]
-inherits=GenericFrame
-frame.element=tabcommon
-interior=true
-interior.element=tframe
+inherits=PanelButtonCommand
+frame=true
+frame.element=tframe
 frame.top=4
 frame.bottom=4
 frame.left=4
 frame.right=4
-interior.x.patternsize=20
-interior.y.patternsize=15
+interior=true
+interior.element=tframe
 
 [TreeExpander]
 inherits=PanelButtonCommand
@@ -446,8 +445,8 @@ frame=false
 interior.element=titlebar
 indicator.size=12
 indicator.element=mdi
-text.normal.color=#787878
-text.focus.color=#404040
+text.normal.color=#aaaaaa
+text.focus.color=#dedede
 text.bold=true
 text.italic=true
 frame.expansion=0
