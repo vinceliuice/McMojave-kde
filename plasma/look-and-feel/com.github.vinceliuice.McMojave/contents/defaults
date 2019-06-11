@@ -11,6 +11,9 @@ Theme=McMojave-circle-dark
 name=McMojave
 
 [kwinrc][org.kde.kdecoration2]
+ButtonsOnLeft=XAI
+ButtonsOnRight=
+library=org.kde.kwin.aurorae
 theme=__aurorae__svg__McMojave
 
 [kcminputrc][Mouse]
