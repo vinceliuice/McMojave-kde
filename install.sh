@@ -20,6 +20,12 @@ install() {
   local LOOKFEEL_THEME=${LOOKFEEL_DIR}/${name}${color}
   local KVANTUM_THEME=${KVANTUM_DIR}/${name}${color}
 
+  mkdir -p                                                                           ${AURORAE_DIR}
+  mkdir -p                                                                           ${SCHEMES_DIR}
+  mkdir -p                                                                           ${PLASMA_DIR}
+  mkdir -p                                                                           ${LOOKFEEL_DIR}
+  mkdir -p                                                                           ${KVANTUM_DIR}
+
   [[ -d ${AURORAE_THEME} ]] && rm -rf ${AURORAE_THEME}
   [[ -d ${PLASMA_THEME} ]] && rm -rf ${PLASMA_THEME}
   [[ -d ${LOOKFEEL_THEME} ]] && rm -rf ${LOOKFEEL_THEME}
