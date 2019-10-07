@@ -15,8 +15,6 @@ SessionManagementScreen {
     property string lastUserName
     property bool passwordFieldOutlined: config.PasswordFieldOutlined == "true"
     property bool hidePasswordRevealIcon: config.HidePasswordRevealIcon == "false"
-
-    //the y position that should be ensured visible when the on screen keyboard is visible
     property int visibleBoundary: mapFromItem(loginButton, 0, 0).y
     onHeightChanged: visibleBoundary = mapFromItem(loginButton, 0, 0).y + loginButton.height + units.smallSpacing
 
@@ -36,9 +34,6 @@ SessionManagementScreen {
         var username = showUsernamePrompt ? userNameInput.text : userList.selectedUser
         var password = passwordBox.text
 
-        //this is partly because it looks nicer
-        //but more importantly it works round a Qt bug that can trigger if the app is closed with a TextField focussed
-        //DAVE REPORT THE FRICKING THING AND PUT A LINK
         loginButton.forceActiveFocus();
         loginRequest(username, password);
     }
@@ -46,7 +41,7 @@ SessionManagementScreen {
     PlasmaComponents.TextField {
         id: userNameInput
         Layout.fillWidth: true
-        Layout.minimumHeight: 21
+        Layout.minimumHeight: 32
         implicitHeight: root.height / 28
         font.family: config.Font || "Noto Sans"
         font.pointSize: usernameFontSize
@@ -58,8 +53,10 @@ SessionManagementScreen {
 
         style: TextFieldStyle {
             textColor: "black"
+            placeholderTextColor: "black"
             background: Rectangle {
-                radius: 3
+                radius: 100
+                color: "white"
             }
         }
     }
@@ -68,10 +65,10 @@ SessionManagementScreen {
         id: passwordBox
         
         Layout.fillWidth: true
-        Layout.minimumHeight: 21
+        Layout.minimumHeight: 32
         implicitHeight: usernameFontSize * 2.85
         font.pointSize: usernameFontSize * 0.8
-        opacity: passwordFieldOutlined ? 0.75 : 0.5
+        opacity: passwordFieldOutlined ? 1.0 : 0.5
         font.family: config.Font || "Noto Sans"
         placeholderText: config.PasswordFieldPlaceholderText == "Password" ? i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Password") : config.PasswordFieldPlaceholderText
         focus: !showUsernamePrompt || lastUserName
@@ -81,13 +78,13 @@ SessionManagementScreen {
 
         style: TextFieldStyle {
             textColor: passwordFieldOutlined ? "white" : "black"
-            placeholderTextColor: passwordFieldOutlined ? "white" : "black"
+            placeholderTextColor: passwordFieldOutlined ? "white" : "white"
             passwordCharacter: config.PasswordFieldCharacter == "" ? "●" : config.PasswordFieldCharacter
             background: Rectangle {
-                radius: 3
+                radius: 100
                 border.color: "white"
                 border.width: 1
-                color: passwordFieldOutlined ? "transparent" : "white"
+                color: "white"
             }
         }
 
@@ -95,8 +92,6 @@ SessionManagementScreen {
             mainStack.currentItem.forceActiveFocus();
         }
 
-        //if empty and left or right is pressed change selection in user switch
-        //this cannot be in keys.onLeftPressed as then it doesn't reach the password box
         Keys.onPressed: {
             if (event.key == Qt.Key_Left && !text) {
                 userList.decrementCurrentIndex();
@@ -128,7 +123,7 @@ SessionManagementScreen {
 
     Image {
         id: loginButton
-        source: "components/artwork/login.svgz"
+        source: "assets/login.svgz"
         smooth: true
         sourceSize: Qt.size(passwordBox.height, passwordBox.height)
         anchors {

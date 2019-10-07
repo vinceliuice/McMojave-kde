@@ -19,23 +19,51 @@
 
 import QtQuick 2.2
 
-import QtGraphicalEffects 1.0
-
 FocusScope {
     id: sceneBackground
+
+    property var sceneBackgroundType
+    property alias sceneBackgroundColor: sceneColorBackground.color
+    property alias sceneBackgroundImage: sceneImageBackground.source
+
+    Rectangle {
+        id: sceneColorBackground
+        anchors.fill: parent
+    }
 
     Image {
         id: sceneImageBackground
         anchors.fill: parent
+        sourceSize.width: parent.width
+        sourceSize.height: parent.height
         fillMode: Image.PreserveAspectCrop
-        source: config.background || config.Background
-        smooth: true
+        smooth: true;
     }
 
-    RecursiveBlur {
-        anchors.fill: sceneImageBackground
-        source: sceneImageBackground
-        radius: config.Blur == "true" ? config.RecursiveBlurRadius : 0
-        loops: config.Blur == "true" ? config.RecursiveBlurLoops : 0
-    }
+    states: [
+        State {
+            name: "imageBackground"
+            when: sceneBackgroundType === "image"
+            PropertyChanges {
+                target: sceneColorBackground
+                visible: false
+            }
+            PropertyChanges {
+                target: sceneImageBackground
+                visible: true
+            }
+        },
+        State {
+            name: "colorBackground"
+            when: sceneBackgroundType !== "image"
+            PropertyChanges {
+                target: sceneColorBackground
+                visible: true
+            }
+            PropertyChanges {
+                target: sceneImageBackground
+                visible: false
+            }
+        }
+    ]
 }

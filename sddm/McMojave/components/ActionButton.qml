@@ -17,7 +17,7 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
 
-import QtQuick 2.2
+import QtQuick 2.8
 import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.components 2.0 as PlasmaComponents
 
@@ -27,14 +27,59 @@ Item {
     property alias iconSource: icon.source
     property alias containsMouse: mouseArea.containsMouse
     property alias font: label.font
+    property alias labelRendering: label.renderType
+    property alias circleOpacity: iconCircle.opacity
+    property alias circleVisiblity: iconCircle.visible
+    property int fontSize: config.fontSize
+    readonly property bool softwareRendering: GraphicsInfo.api === GraphicsInfo.Software
     signal clicked
 
     activeFocusOnTab: true
-    opacity: ( containsMouse || activeFocus ) ? 1 : 0.6
-    property int iconSize
 
-    implicitWidth: Math.max(icon.implicitWidth + units.largeSpacing * 3, label.contentWidth)
-    implicitHeight: Math.max(icon.implicitHeight + units.largeSpacing * 2, label.contentHeight)
+    property int iconSize: units.gridUnit * 3
+
+    implicitWidth: Math.max(iconSize + units.largeSpacing * 2, label.contentWidth)
+    implicitHeight: iconSize + units.smallSpacing + label.implicitHeight
+
+    opacity: activeFocus || containsMouse ? 1 : 0.85
+        Behavior on opacity {
+            PropertyAnimation { // OpacityAnimator makes it turn black at random intervals
+                duration: units.longDuration * 2
+                easing.type: Easing.InOutQuad
+            }
+    }
+
+    Rectangle {
+        id: iconCircle
+        anchors.centerIn: icon
+        width: iconSize + units.smallSpacing
+        height: width
+        radius: width / 2
+        color: softwareRendering ?  PlasmaCore.ColorScope.backgroundColor : PlasmaCore.ColorScope.textColor
+        opacity: activeFocus || containsMouse ? (softwareRendering ? 0.8 : 0.15) : (softwareRendering ? 0.6 : 0)
+        Behavior on opacity {
+                PropertyAnimation { // OpacityAnimator makes it turn black at random intervals
+                    duration: units.longDuration * 3
+                    easing.type: Easing.InOutQuad
+                }
+        }
+    }
+
+    Rectangle {
+        anchors.centerIn: iconCircle
+        width: iconCircle.width
+        height: width
+        radius: width / 2
+        scale: mouseArea.containsPress ? 1 : 0
+        color: PlasmaCore.ColorScope.textColor
+        opacity: 0.15
+        Behavior on scale {
+                PropertyAnimation {
+                    duration: units.shortDuration
+                    easing.type: Easing.InOutQuart
+                }
+        }
+    }
 
     PlasmaCore.IconItem {
         id: icon
@@ -42,9 +87,8 @@ Item {
             top: parent.top
             horizontalCenter: parent.horizontalCenter
         }
-
-        width: config.PowerIconSize ? config.PowerIconSize : iconSize
-        height: config.PowerIconSize ? config.PowerIconSize : iconSize
+        width: iconSize
+        height: iconSize
 
         colorGroup: PlasmaCore.ColorScope.colorGroup
         active: mouseArea.containsMouse || root.activeFocus
@@ -52,15 +96,15 @@ Item {
 
     PlasmaComponents.Label {
         id: label
-        font.family: config.Font || "Noto Sans"
-        font.pointSize: config.FontPointSize || root.generalFontSize
-        renderType: Text.QtRendering
+        font.pointSize: Math.max(fontSize + 1,theme.defaultFont.pointSize + 1)
         anchors {
             top: icon.bottom
-            topMargin: units.smallSpacing
+            topMargin: (softwareRendering ? 1.5 : 1) * units.smallSpacing
             left: parent.left
             right: parent.right
         }
+        style: softwareRendering ? Text.Outline : Text.Normal
+        styleColor: softwareRendering ? PlasmaCore.ColorScope.backgroundColor : "transparent" //no outline, doesn't matter
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignTop
         wrapMode: Text.WordWrap
@@ -71,7 +115,7 @@ Item {
         id: mouseArea
         hoverEnabled: true
         onClicked: root.clicked()
-        anchors.fill: root
+        anchors.fill: parent
     }
 
     Keys.onEnterPressed: clicked()

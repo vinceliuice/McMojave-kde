@@ -27,13 +27,14 @@ import QtQuick.Controls 1.3 as QQC
 PlasmaComponents.ToolButton {
     id: root
     property int currentIndex: -1
-    property int sessionFontSize
+
+    implicitWidth: minimumWidth
 
     visible: menu.items.length > 1
-    font.family: config.Font || "Noto Sans"
-    font.pointSize: sessionFontSize
 
-    text: instantiator.objectAt(currentIndex).text || ""
+    text: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Desktop Session: %1", instantiator.objectAt(currentIndex).text || "")
+
+    font.pointSize: config.fontSize
 
     Component.onCompleted: {
         currentIndex = sessionModel.lastIndex
@@ -41,6 +42,7 @@ PlasmaComponents.ToolButton {
 
     menu: QQC.Menu {
         id: menu
+        style: BreezeMenuStyle {}
         Instantiator {
             id: instantiator
             model: sessionModel

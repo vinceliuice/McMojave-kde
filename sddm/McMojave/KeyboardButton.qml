@@ -1,5 +1,4 @@
 import QtQuick 2.2
-import QtQuick.Controls.Styles 1.4
 
 import org.kde.plasma.core 2.0 as PlasmaCore
 import org.kde.plasma.components 2.0 as PlasmaComponents
@@ -11,30 +10,17 @@ PlasmaComponents.ToolButton {
 
     property int currentIndex: -1
 
-    font.family: config.Font || "Noto Sans"
-    font.pointSize: root.height/75
-    // text: instantiator.objectAt(currentIndex).shortName
-    visible: menu.items.length > 1
-    anchors.left: parent.left
-    anchors.leftMargin:7
+    text: i18nd("plasma_lookandfeel_org.kde.lookandfeel", "Keyboard Layout: %1", instantiator.objectAt(currentIndex).shortName)
+    implicitWidth: minimumWidth
+    font.pointSize: config.fontSize
 
-    style: ButtonStyle {
-        label: Image {
-            source: "artwork/character-set.svgz"
-            fillMode: Image.PreserveAspectFit
-            transform: Translate { y: 1 }
-        }
-        background: Rectangle {
-            radius: 3
-            color: keyboardButton.activeFocus ? "white" : "transparent"
-            opacity: keyboardButton.activeFocus ? 0.3 : 1
-        }
-    }
+    visible: menu.items.length > 1
 
     Component.onCompleted: currentIndex = Qt.binding(function() {return keyboard.currentLayout});
 
     menu: QQC.Menu {
         id: keyboardMenu
+        style: BreezeMenuStyle {}
         Instantiator {
             id: instantiator
             model: keyboard.layouts

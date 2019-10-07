@@ -33,16 +33,6 @@ Row {
         connectedSources: ["Battery", "AC Adapter"]
     }
 
-    PlasmaComponents.Label {
-        id: batteryLabel
-        height: undefined
-        font.family: config.Font || "Noto Sans"
-        font.pointSize: root.height/75
-        renderType: Text.QtRendering
-        text: i18nd("plasma_lookandfeel_org.kde.lookandfeel","%1%", battery.percent)
-        Accessible.name: i18nd("plasma_lookandfeel_org.kde.lookandfeel","Battery at %1%", battery.percent)
-    }
-
     PW.BatteryIcon {
         id: battery
         hasBattery: pmSource.data["Battery"]["Has Battery"] || false
@@ -51,5 +41,13 @@ Row {
 
         height: batteryLabel.height
         width: height
+    }
+
+    PlasmaComponents.Label {
+        id: batteryLabel
+        font.pointSize: config.fontSize
+        height: undefined
+        text: i18nd("plasma_lookandfeel_org.kde.lookandfeel","%1%", battery.percent)
+        Accessible.name: i18nd("plasma_lookandfeel_org.kde.lookandfeel","Battery at %1%", battery.percent)
     }
 }

@@ -61,8 +61,9 @@ Item {
 
     property alias userList: userListView
 
-    default property alias _children: innerLayout.children
+    property int fontSize: config.fontSize
 
+    default property alias _children: innerLayout.children
 
     UserList {
         id: userListView
@@ -86,6 +87,7 @@ Item {
         anchors.bottom: parent.bottom
         PlasmaComponents.Label {
             id: notificationsLabel
+            font.pointSize: Math.max(fontSize + 1,theme.defaultFont.pointSize + 1)
             Layout.maximumWidth: units.gridUnit * 16
             Layout.alignment: Qt.AlignHCenter
             Layout.fillWidth: true
@@ -109,7 +111,7 @@ Item {
         }
         Row { //deliberately not rowlayout as I'm not trying to resize child items
             id: actionItemsLayout
-            spacing: units.smallSpacing
+            spacing: units.largeSpacing / 2
             Layout.alignment: Qt.AlignHCenter
         }
         Item {
