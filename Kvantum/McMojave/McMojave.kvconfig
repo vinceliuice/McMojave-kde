@@ -161,16 +161,17 @@ inherits=PanelButtonCommand
 
 [ToolbarButton]
 inherits=PanelButtonCommand
+interior.element=tbutton
 frame=true
 frame.element=tbutton
 frame.top=10
 frame.bottom=10
 frame.left=10
 frame.right=10
-interior.element=tbutton
 text.press.color=#464646
 text.toggle.color=#565656
 text.normal.color=#dedede
+text.focus.color=#dedede
 text.normal.inactive.color=#999999
 text.toggle.inactive.color=#aaaaaa
 indicator.element=arrow

@@ -146,13 +146,16 @@ min_height=24
 
 [PanelButtonTool]
 inherits=PanelButtonCommand
-frame.expandedElement=button
-interior.expandedElement=button
 
 [ToolbarButton]
 inherits=PanelButtonCommand
-frame.element=tbutton
 interior.element=tbutton
+frame=true
+frame.element=tbutton
+frame.top=10
+frame.bottom=10
+frame.left=10
+frame.right=10
 text.normal.color=#333333
 text.focus.color=#242424
 text.press.color=#242424
@@ -327,13 +330,15 @@ inherits=PanelButtonCommand
 indicator.element=toolbar
 indicator.size=10
 text.margin=0
-interior.element=menubar
-frame.element=menubar
+interior.element=toolbar
+frame.element=toolbar
 text.normal.color=#333333
 text.focus.color=#242424
 text.normal.inactive.color=#33333374
+frame.left=4
+frame.right=0
 frame.top=0
-frame.bottom=4
+frame.bottom=7
 frame.expansion=0
 
 [Slider]
