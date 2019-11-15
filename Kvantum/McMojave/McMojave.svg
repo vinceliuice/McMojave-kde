@@ -20,9 +20,9 @@
      inkscape:window-maximized="1"
      inkscape:window-y="26"
      inkscape:window-x="0"
-     inkscape:cy="980.26722"
-     inkscape:cx="64.408435"
-     inkscape:zoom="1.4142136"
+     inkscape:cy="1017.7957"
+     inkscape:cx="121.87738"
+     inkscape:zoom="8.0000002"
      showgrid="false"
      id="namedview967"
      inkscape:window-height="716"
@@ -9961,7 +9961,7 @@
     </g>
   </g>
   <g
-     style="fill-rule:evenodd;stroke:none;opacity:0.2;fill:#000000"
+     style="fill-rule:evenodd;stroke:none;opacity:0;fill:#000000"
      id="tbutton-separator-bottom"
      transform="translate(195,302.0127)"
      inkscape:label="#tbutton-separator-bottom">
@@ -9984,7 +9984,7 @@
        d="m -71.99995,18.5 v 5 h 1 v -5 z" />
   </g>
   <g
-     style="fill-rule:evenodd;stroke:none;opacity:0.2;fill:#000000"
+     style="fill-rule:evenodd;stroke:none;opacity:0;fill:#000000"
      id="tbutton-separator-top"
      transform="translate(195,300.45463)"
      inkscape:label="#tbutton-separator-top">
@@ -10007,7 +10007,7 @@
        d="M -71.99995,4.999999e-8 V 5 h 1 V 4.999999e-8 Z" />
   </g>
   <g
-     style="fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;opacity:0.2;fill:#000000"
+     style="fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:square;stroke-linejoin:round;opacity:0;fill:#000000"
      id="tbutton-separator"
      transform="matrix(0.2,0,0,0.5,162,305.45465)"
      inkscape:label="#tbutton-separator">
