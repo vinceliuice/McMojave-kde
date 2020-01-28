@@ -199,14 +199,16 @@ text.bold=false
 
 [IndicatorSpinBox]
 inherits=PanelButtonCommand
-indicator.element=arrow
-frame.top=3
-frame.bottom=3
-frame.left=3
-frame.right=3
+inherits=PanelButtonCommand
+indicator.element=spin
+frame.element=spinbox
+interior.element=spinbox
+frame.top=5
+frame.bottom=5
+frame.left=5
+frame.right=5
 indicator.size=11
-text.normal.color=black
-indicator.element=sarrow
+text.normal.color=#333333
 
 [RadioButton]
 inherits=PanelButtonCommand
