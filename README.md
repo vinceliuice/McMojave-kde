@@ -27,4 +27,9 @@ If you like my project, you can donate at:
 
 GNU GPL v3
 
+## preview
+
+![dark](../master/plasma/look-and-feel/com.github.vinceliuice.McMojave/contents/previews/fullscreenpreview.jpg)
+![light](../master/plasma/look-and-feel/com.github.vinceliuice.McMojave-light/contents/previews/fullscreenpreview.jpg)
+
 
