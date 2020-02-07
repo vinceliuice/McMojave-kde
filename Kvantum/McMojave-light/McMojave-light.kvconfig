@@ -146,6 +146,7 @@ min_height=24
 
 [PanelButtonTool]
 inherits=PanelButtonCommand
+indicator.size=0
 
 [ToolbarButton]
 inherits=PanelButtonCommand

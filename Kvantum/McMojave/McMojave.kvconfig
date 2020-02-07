@@ -158,6 +158,7 @@ frame.patternsize=20
 
 [PanelButtonTool]
 inherits=PanelButtonCommand
+indicator.size=0
 
 [ToolbarButton]
 inherits=PanelButtonCommand
