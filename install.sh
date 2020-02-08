@@ -33,18 +33,18 @@ install() {
   [[ -d ${SCHEMES_DIR}/McMojaveLight.colors ]] && rm -r ${SCHEMES_DIR}/McMojaveLight.colors
   [[ -d ${KVANTUM_THEME} ]] && rm -rf ${KVANTUM_THEME}
 
-  cp -ur ${SRC_DIR}/aurorae/${name}${color}                                          ${AURORAE_DIR}
-  cp -ur ${SRC_DIR}/Kvantum/${name}${color}                                          ${KVANTUM_DIR}
-  cp -ur ${SRC_DIR}/plasma/desktoptheme/${name}${color}                              ${PLASMA_DIR}
-  cp -ur ${SRC_DIR}/plasma/look-and-feel/com.github.vinceliuice.${name}${color}      ${LOOKFEEL_DIR}
+  cp -r ${SRC_DIR}/aurorae/${name}*                                                  ${AURORAE_DIR}
+  cp -r ${SRC_DIR}/Kvantum/${name}${color}                                           ${KVANTUM_DIR}
+  cp -r ${SRC_DIR}/plasma/desktoptheme/${name}${color}                               ${PLASMA_DIR}
+  cp -r ${SRC_DIR}/plasma/look-and-feel/com.github.vinceliuice.${name}${color}       ${LOOKFEEL_DIR}
 
   [[ ${color} == '' ]] && \
-  cp -ur ${SRC_DIR}/color-schemes/McMojave.colors                                    ${SCHEMES_DIR} && \
-  cp -ur ${SRC_DIR}/color-schemes/McMojave.colors                                    ${PLASMA_DIR}/${name}/colors
+  cp -r ${SRC_DIR}/color-schemes/McMojave.colors                                     ${SCHEMES_DIR} && \
+  cp -r ${SRC_DIR}/color-schemes/McMojave.colors                                     ${PLASMA_DIR}/${name}/colors
 
   [[ ${color} == '-light' ]] && \
-  cp -ur ${SRC_DIR}/color-schemes/McMojaveLight.colors                               ${SCHEMES_DIR} && \
-  cp -ur ${SRC_DIR}/color-schemes/McMojaveLight.colors                               ${PLASMA_DIR}/${name}-light/colors
+  cp -r ${SRC_DIR}/color-schemes/McMojaveLight.colors                                ${SCHEMES_DIR} && \
+  cp -r ${SRC_DIR}/color-schemes/McMojaveLight.colors                                ${PLASMA_DIR}/${name}-light/colors
 }
 
 echo "Installing 'McMojave kde themes'..."
