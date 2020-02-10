@@ -28,15 +28,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="438.39121"
-     inkscape:cy="168.73087"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="175.64266"
+     inkscape:cy="199.61495"
      inkscape:current-layer="layer1"
-     showgrid="true"
+     showgrid="false"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
      inkscape:window-width="1366"
-     inkscape:window-height="704"
+     inkscape:window-height="708"
      inkscape:window-x="0"
      inkscape:window-y="34"
      width="48px"
@@ -743,5 +743,63 @@
        width="100%"
        transform="matrix(-1,0,0,1,356,-1.7e-6)"
        id="decoration-right" />
+    <rect
+       style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.33333382"
+       id="shadow-hint-top-margin"
+       width="4"
+       height="20"
+       x="174"
+       y="139" />
+    <rect
+       style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:1.08263266"
+       id="shadow-hint-bottom-margin"
+       width="4"
+       height="72"
+       x="174.00002"
+       y="281" />
+    <rect
+       style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.51298922"
+       id="shadow-hint-right-margin"
+       width="40"
+       height="4"
+       x="281"
+       y="234" />
+    <rect
+       style="opacity:1;fill:#ff00ff;fill-opacity:1;stroke:none;stroke-width:0.51298916"
+       id="shadow-hint-left-margin"
+       width="40"
+       height="4"
+       x="35"
+       y="230" />
+    <rect
+       id="hint-top-margin"
+       width="4"
+       height="50.000053"
+       x="186"
+       y="139"
+       style="fill:#00ff29;fill-opacity:1;stroke:none;stroke-width:0.94406915" />
+    <rect
+       id="hint-bottom-margin"
+       width="4"
+       height="78"
+       x="185"
+       y="275"
+       style="fill:#00ff29;fill-opacity:1;stroke:none;stroke-width:0.99872041" />
+    <rect
+       id="hint-right-margin"
+       width="4"
+       height="70"
+       x="225"
+       y="-321"
+       transform="rotate(90)"
+       style="fill:#00ff29;fill-opacity:1;stroke:none;stroke-width:0.88561493" />
+    <rect
+       id="hint-left-margin"
+       width="4"
+       height="70"
+       x="222"
+       y="-105"
+       transform="rotate(90)"
+       style="fill:#00ff29;fill-opacity:1;stroke:none;stroke-width:0.88614255" />
   </g>
 </svg>
