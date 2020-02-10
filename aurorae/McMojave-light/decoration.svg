@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710678"
-     inkscape:cx="293.83992"
-     inkscape:cy="79.412173"
+     inkscape:zoom="0.25"
+     inkscape:cx="-297.48742"
+     inkscape:cy="55.420604"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:grid-bbox="true"
@@ -515,7 +515,7 @@
          inkscape:connector-curvature="0"
          id="path4151"
          d="m 325,175.99993 v 0.68864 0.001 0.31037 h 145 v -0.31037 -0.001 -0.68864 z"
-         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;opacity:0.1" />
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;opacity:0.5" />
     </g>
     <g
        id="decoration-left"
@@ -592,7 +592,7 @@
          inkscape:connector-curvature="0"
          id="path4181"
          d="m 325,176 v 0.68857 0.001 V 177 h 145 v -0.31035 -0.001 V 176 Z"
-         style="fill:#ffffff;fill-opacity:0.99492385;stroke:none;stroke-width:1;opacity:0.08" />
+         style="fill:#ffffff;fill-opacity:0.99492385;stroke:none;stroke-width:1;opacity:0.35" />
     </g>
     <g
        id="decoration-inactive-left"
@@ -649,6 +649,11 @@
                id="rect5073-4-9-6"
                inkscape:connector-curvature="0"
                sodipodi:nodetypes="ccccccc" />
+            <path
+               style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;opacity:0.35"
+               d="M 447 86 C 443.676 86 441 88.676 441 92 L 441 92.800781 C 441 89.587581 443.676 87 447 87 L 470 87 L 470 86 L 447 86 z "
+               transform="translate(-121,89.063)"
+               id="path961" />
           </g>
         </g>
       </g>
@@ -816,6 +821,11 @@
              style="fill:url(#linearGradient1033);fill-opacity:1;stroke:none;stroke-width:1"
              inkscape:connector-curvature="0"
              transform="matrix(-1,0,0,1,604,89.0625)" />
+          <path
+             style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1;opacity:0.5"
+             d="M 87 86 C 83.67599 86 81 88.675992 81 92 L 81 92.800781 C 81 89.587571 83.67599 87 87 87 L 110 87 L 110 86 L 87 86 z "
+             transform="translate(239,89.0625)"
+             id="path950" />
         </g>
       </g>
     </g>
