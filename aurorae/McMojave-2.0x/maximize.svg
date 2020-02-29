@@ -14,7 +14,7 @@
    height="24"
    id="svg4428"
    version="1.1"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
    sodipodi:docname="maximize.svg">
   <defs
      id="defs4430">
@@ -345,17 +345,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="8.140625"
-     inkscape:cx="13.999171"
-     inkscape:cy="-0.94832969"
+     inkscape:zoom="6.5458367"
+     inkscape:cx="26.990017"
+     inkscape:cy="20.230099"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-bbox="true"
      inkscape:window-width="1366"
-     inkscape:window-height="695"
+     inkscape:window-height="708"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="34"
      inkscape:window-maximized="1"
      showborder="true"
      inkscape:showpageshadow="false">
@@ -379,7 +379,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -528,8 +528,50 @@
        y="0"
        xlink:href="#inactive-center"
        id="deactivated-center"
-       transform="translate(27.448229)"
+       transform="translate(0.02621884,-27.560022)"
        width="100%"
        height="100%" />
+    <use
+       height="100%"
+       width="100%"
+       transform="translate(28.949343,-27.560022)"
+       id="deactivated-inactive-center"
+       xlink:href="#inactive-center"
+       y="0"
+       x="0" />
+    <g
+       inkscape:label="#hover-inactive-center"
+       id="hover-inactive-center"
+       style="display:inline"
+       transform="translate(-235.68815,1318.9751)">
+      <rect
+         ry="1.6930764e-05"
+         y="-216.63782"
+         x="273"
+         height="16"
+         width="16"
+         id="rect907"
+         style="opacity:0;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47432083;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill" />
+      <g
+         style="enable-background:new"
+         id="g915"
+         transform="translate(274,-215.63782)"
+         inkscape:label="#g929">
+        <g
+           id="g913"
+           transform="translate(-4.9999997,-1033.3622)">
+          <path
+             inkscape:connector-curvature="0"
+             id="path909"
+             d="m 12.000061,1047.3622 c 3.865929,0 6.999939,-3.134 6.999939,-7 0,-3.866 -3.13401,-7 -6.999939,-7 -3.8660427,0 -7.0000616,3.134 -7.0000616,7 0,3.866 3.1340189,7 7.0000616,7"
+             style="fill:#5d5d5d;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path911"
+             d="M 10.414063,1037.3622 15,1041.9481 v -3.5859 c 0,-0.4155 -0.5845,-1 -1,-1 z M 9,1038.7763 v 3.5859 c 0,0.4155 0.5845,1 1,1 h 3.585938 z"
+             style="opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </g>
+    </g>
   </g>
 </svg>

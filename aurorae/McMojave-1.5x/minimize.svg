@@ -14,7 +14,7 @@
    height="24"
    id="svg4428"
    version="1.1"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
    sodipodi:docname="minimize.svg">
   <defs
      id="defs4430">
@@ -345,18 +345,18 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.0351562"
-     inkscape:cx="12.47256"
-     inkscape:cy="79.151928"
+     inkscape:zoom="1.4390728"
+     inkscape:cx="13.018383"
+     inkscape:cy="35.528809"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-bbox="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="695"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
-     inkscape:window-maximized="1"
+     inkscape:window-width="478"
+     inkscape:window-height="446"
+     inkscape:window-x="149"
+     inkscape:window-y="178"
+     inkscape:window-maximized="0"
      showborder="true"
      inkscape:showpageshadow="false">
     <inkscape:grid
@@ -379,7 +379,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -529,13 +529,58 @@
         </g>
       </g>
     </g>
+    <g
+       inkscape:label="#hover-inactive-center"
+       id="hover-inactive-center"
+       style="display:inline"
+       transform="translate(-221.73625,1319.6456)">
+      <rect
+         style="opacity:0;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.47432083;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         id="rect899"
+         width="16"
+         height="16"
+         x="253"
+         y="-216.63782"
+         ry="1.6930764e-05" />
+      <g
+         style="enable-background:new"
+         id="g907"
+         transform="translate(254,-215.63782)"
+         inkscape:label="#g979">
+        <g
+           id="g905"
+           transform="translate(-4.9999997,-1033.3622)">
+          <path
+             inkscape:connector-curvature="0"
+             id="path901"
+             d="m 12.000061,1047.3622 c 3.865929,0 6.999939,-3.134 6.999939,-7 0,-3.866 -3.13401,-7 -6.999939,-7 -3.8660427,0 -7.0000616,3.134 -7.0000616,7 0,3.866 3.1340189,7 7.0000616,7"
+             style="fill:#5d5d5d;fill-opacity:1;fill-rule:evenodd;stroke:none" />
+          <rect
+             id="rect903"
+             ry="1"
+             y="1039.36"
+             x="8"
+             height="2"
+             width="8"
+             style="opacity:0.5;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        </g>
+      </g>
+    </g>
     <use
        x="0"
        y="0"
        xlink:href="#inactive-center"
        id="deactivated-center"
-       transform="translate(30.464492)"
+       transform="translate(0.2473988,-28.230522)"
        width="100%"
        height="100%" />
+    <use
+       height="100%"
+       width="100%"
+       transform="translate(29.170523,-28.230522)"
+       id="deactivated-inactive-center"
+       xlink:href="#inactive-center"
+       y="0"
+       x="0" />
   </g>
 </svg>
