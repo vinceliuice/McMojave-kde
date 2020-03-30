@@ -1,5 +1,5 @@
-[kdeglobals][KDE]
-widgetStyle=kvantum
+[kcminputrc][Mouse]
+cursorTheme=McMojave-cursors
 
 [kdeglobals][General]
 ColorScheme=McMojave
@@ -7,8 +7,14 @@ ColorScheme=McMojave
 [kdeglobals][Icons]
 Theme=McMojave-circle-dark
 
-[plasmarc][Theme]
-name=McMojave
+[kdeglobals][KDE]
+widgetStyle=kvantum
+
+[kwinrc][DesktopSwitcher]
+LayoutName=org.kde.breeze.desktop
+
+[kwinrc][WindowSwitcher]
+LayoutName=org.kde.breeze.desktop
 
 [kwinrc][org.kde.kdecoration2]
 ButtonsOnLeft=XAI
@@ -16,5 +22,5 @@ ButtonsOnRight=
 library=org.kde.kwin.aurorae
 theme=__aurorae__svg__McMojave
 
-[kcminputrc][Mouse]
-cursorTheme=McMojave-cursors
+[plasmarc][Theme]
+name=McMojave
