@@ -310,7 +310,7 @@ inherits=PanelButtonCommand
 frame=false
 interior=false
 indicator.size=10
-indicator.element=sarrow
+indicator.element=tree
 
 [HeaderSection]
 inherits=PanelButtonCommand
