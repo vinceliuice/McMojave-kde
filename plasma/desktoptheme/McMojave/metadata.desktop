@@ -9,3 +9,9 @@ X-KDE-PluginInfo-License=GLP V3.0
 X-KDE-PluginInfo-Name=McMojave
 X-KDE-PluginInfo-Version=0.1
 X-Plasma-API=5.0
+
+[Wallpaper]
+defaultWallpaperTheme=McMojave
+defaultFileSuffix=.jpg
+defaultWidth=1920
+defaultHeight=1080

@@ -1,7 +1,7 @@
 var panel = new Panel
 var panelScreen = panel.screen
 panel.location = "top";
-panel.height = Math.round(gridUnit * 1.5);
+panel.height = Math.round(gridUnit * 2);
 
 var kickoff = panel.addWidget("org.kde.plasma.kickoff")
 kickoff.currentConfigGroup = ["Shortcuts"]
