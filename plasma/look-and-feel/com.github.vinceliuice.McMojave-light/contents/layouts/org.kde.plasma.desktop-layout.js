@@ -21,8 +21,7 @@ var layout = {
                 },
                 "/General": {
                     "ToolBoxButtonState": "topcenter",
-                    "ToolBoxButtonX": "510",
-                    "ToolBoxButtonY": "24"
+                    "ToolBoxButtonX": "798"
                 },
                 "/Wallpaper/org.kde.image/General": {
                     "Image": "file:///usr/share/wallpapers/PastelHills/contents/images/1920x1080.jpg"
@@ -32,6 +31,70 @@ var layout = {
         }
     ],
     "panels": [
+        {
+            "alignment": "left",
+            "applets": [
+                {
+                    "config": {
+                        "/": {
+                            "PreloadWeight": "0"
+                        }
+                    },
+                    "plugin": "org.kde.plasma.kickoff"
+                },
+                {
+                    "config": {
+                        "/": {
+                            "PreloadWeight": "0"
+                        }
+                    },
+                    "plugin": "org.kde.plasma.appmenu"
+                },
+                {
+                    "config": {
+                        "/": {
+                            "PreloadWeight": "0"
+                        }
+                    },
+                    "plugin": "org.kde.plasma.panelspacer"
+                },
+                {
+                    "config": {
+                        "/": {
+                            "PreloadWeight": "0"
+                        }
+                    },
+                    "plugin": "org.kde.plasma.systemtray"
+                },
+                {
+                    "config": {
+                        "/": {
+                            "PreloadWeight": "0"
+                        }
+                    },
+                    "plugin": "org.kde.plasma.splitdigitalclock"
+                },
+                {
+                    "config": {
+                        "/": {
+                            "PreloadWeight": "0"
+                        }
+                    },
+                    "plugin": "org.kde.milou"
+                }
+            ],
+            "config": {
+                "/": {
+                    "PreloadWeight": "0"
+                }
+            },
+            "height": 1.5,
+            "hiding": "normal",
+            "location": "top",
+            "maximumLength": 85.375,
+            "minimumLength": 85.375,
+            "offset": 0
+        },
         {
             "alignment": "left",
             "applets": [
@@ -83,20 +146,14 @@ var layout = {
                     "config": {
                         "/": {
                             "immutability": "1"
-                        },
-                        "/Configuration": {
-                            "PreloadWeight": "55"
                         }
                     },
-                    "plugin": "org.kde.plasma.splitdigitalclock"
+                    "plugin": "org.kde.plasma.digitalclock"
                 },
                 {
                     "config": {
                         "/": {
                             "immutability": "1"
-                        },
-                        "/Configuration": {
-                            "PreloadWeight": "55"
                         }
                     },
                     "plugin": "org.kde.milou"
@@ -108,17 +165,13 @@ var layout = {
                     "immutability": "1",
                     "lastScreen": "0",
                     "wallpaperplugin": "org.kde.image"
-                },
-                "/ConfigDialog": {
-                    "DialogHeight": "86",
-                    "DialogWidth": "1366"
                 }
             },
-            "height": 1.5,
+            "height": 2,
             "hiding": "normal",
             "location": "top",
-            "maximumLength": 85.375,
-            "minimumLength": 85.375,
+            "maximumLength": 120,
+            "minimumLength": 120,
             "offset": 0
         }
     ],
