@@ -26,15 +26,16 @@ SRC_DIR=$(cd $(dirname $0) && pwd)
 THEME_NAME=McMojave
 COLOR_VARIANTS=('' '-light')
 
+[[ ! -d ${AURORAE_DIR} ]] && mkdir -p ${AURORAE_DIR}
+[[ ! -d ${SCHEMES_DIR} ]] && mkdir -p ${SCHEMES_DIR}
+[[ ! -d ${PLASMA_DIR} ]] && mkdir -p ${PLASMA_DIR}
+[[ ! -d ${LOOKFEEL_DIR} ]] && mkdir -p ${LOOKFEEL_DIR}
+[[ ! -d ${KVANTUM_DIR} ]] && mkdir -p ${KVANTUM_DIR}
+[[ ! -d ${WALLPAPER_DIR} ]] && mkdir -p ${WALLPAPER_DIR}
+
 install() {
   local name=${1}
   local color=${2}
-
-  mkdir -p                                                                           ${AURORAE_DIR}
-  mkdir -p                                                                           ${SCHEMES_DIR}
-  mkdir -p                                                                           ${PLASMA_DIR}
-  mkdir -p                                                                           ${LOOKFEEL_DIR}
-  mkdir -p                                                                           ${KVANTUM_DIR}
 
   cp -r ${SRC_DIR}/aurorae/${name}*                                                  ${AURORAE_DIR}
   cp -r ${SRC_DIR}/Kvantum/${name}${color}                                           ${KVANTUM_DIR}
