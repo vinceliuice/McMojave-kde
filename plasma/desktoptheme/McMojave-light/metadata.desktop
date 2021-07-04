@@ -1,13 +1,15 @@
 [Desktop Entry]
-Comment=A translucent theme for Plasma 5
 Name=McMojave-light
+Comment=A MacOS Mojave like theme for Plasma 5
+
 X-KDE-PluginInfo-Author=vince liuice
 X-KDE-PluginInfo-Category=Plasma Theme
 X-KDE-PluginInfo-Email=vinceliuice@hotmail.com
 X-KDE-PluginInfo-EnabledByDefault=true
-X-KDE-PluginInfo-License=GPL V3.0
-X-KDE-PluginInfo-Name=Mojave-light
-X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-License=GLP V3.0
+X-KDE-PluginInfo-Name=default
+X-KDE-PluginInfo-Version=5.78.0
+X-KDE-PluginInfo-Website=https://plasma.kde.org
 X-Plasma-API=5.0
 
 [Wallpaper]
@@ -15,3 +17,10 @@ defaultWallpaperTheme=McMojave-light
 defaultFileSuffix=.jpg
 defaultWidth=1920
 defaultHeight=1080
+
+[ContrastEffect]
+enabled=true
+contrast=0.2
+#intensity is disabled, in order to auto adjust to the chosen theme color
+#intensity=2.0
+saturation=1.7
