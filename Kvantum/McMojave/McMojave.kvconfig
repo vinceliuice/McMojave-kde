@@ -334,9 +334,9 @@ text.normal.color=#dedede
 text.focus.color=#ffffff
 text.normal.inactive.color=#dedede74
 frame.left=4
-frame.right=0
+frame.right=4
 frame.top=0
-frame.bottom=7
+frame.bottom=1
 frame.expansion=0
 
 [Slider]
