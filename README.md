@@ -14,6 +14,9 @@ In this repository you'll find:
 ## Installation
 
 ```sh
+git clone https://github.com/vinceliuice/McMojave-kde
+cd ./McMojave-kde/
+chmod +x ./install.sh
 ./install.sh
 ```
 
