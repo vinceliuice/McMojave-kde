@@ -60,9 +60,19 @@ scrollbar_in_view=false
 spin_button_width=16
 submenu_delay=250
 transient_groove=false
-tree_branch_line=false
+tree_branch_line=true
 no_inactiveness=false
 reduce_menu_opacity=0
+click_behavior=0
+contrast=1.00
+dialog_button_layout=0
+drag_from_buttons=false
+intensity=1.00
+menu_blur_radius=6
+saturation=1.00
+scrollable_menu=true
+shadowless_popup=false
+tooltip_blur_radius=6
 
 [GeneralColors]
 window.color=#242424
@@ -113,6 +123,11 @@ tint_on_mouseover=0
 transparent_pcmanfm_view=true
 opaque_colors=false
 scroll_jump_workaround=false
+blur_only_active_window=false
+centered_forms=false
+kinetic_scrolling=false
+noninteger_translucency=false
+style_vertical_toolbars=false
 
 [PanelButtonCommand]
 frame=true
