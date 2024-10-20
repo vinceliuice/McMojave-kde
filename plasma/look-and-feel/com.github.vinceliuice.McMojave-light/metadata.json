@@ -1,0 +1,34 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "vinceliuice@hotmail.com",
+                "Name": "Vince Liuice"
+            }
+        ],
+         "Category": "Global Themes (Plasma 6)",
+        "ServiceTypes": [
+            "Plasma/LookAndFeel"
+        ],
+        "EnabledByDefault": true,
+        "Description": "MacOS like theme for kde plasma",
+        "Id": "com.github.vinceliuice.McMojave-light",
+        "License": "GPLv3",
+        "Name": "McMojave-light",
+        "Website": "https://github.com/vinceliuice/McMojave-kde"
+    },
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;",
+    "X-KDE-fallbackPackage": "org.kde.breeze.desktop",
+    "X-Plasma-MainScript": "defaults",
+    "X-Plasma-APIVersion": "2",
+    "X-KPackage-Dependencies": [
+        "kns://colorschemes.knsrc/api.kde-look.org/1305007",
+        "kns://plasma-themes.knsrc/api.kde-look.org/1355811",
+        "kns://aurorae.knsrc/api.kde-look.org/1305005",
+        "kns://wallpaper.knsrc/api.kde-look.org/1383421",
+        "kns://sddmtheme.knsrc/api.kde-look.org/1312086",
+        "kns://icons.knsrc/api.kde-look.org/1305429",
+        "kns://xcursor.knsrc/api.kde-look.org/1355701"
+    ]
+}

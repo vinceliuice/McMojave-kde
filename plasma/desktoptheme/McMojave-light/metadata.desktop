@@ -15,8 +15,8 @@ X-Plasma-API=5.0
 [Wallpaper]
 defaultWallpaperTheme=McMojave-light
 defaultFileSuffix=.jpg
-defaultWidth=1920
-defaultHeight=1080
+defaultWidth=3840
+defaultHeight=2160
 
 [ContrastEffect]
 enabled=false

@@ -1,0 +1,24 @@
+{
+    "KPackageStructure": "aurorae",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "vinceliuice@hotmail.com",
+                "Name": "Vince Liuice"
+            }
+        ],
+        "Category": "Plasma 6 Window Decorations",
+        "ServiceTypes": [
+            "aurorae"
+        ],
+        "EnabledByDefault": true,
+        "Name": "McMojave-light",
+        "Description" : "McMojave-light window decorations",
+        "Id": "McMojave-light",
+        "License": "GPL v3",
+        "Version": "1.0",
+        "X-KDE-PluginInfo-blur": false,
+        "X-KPackage-Dependencies": [
+        ]
+    }
+}

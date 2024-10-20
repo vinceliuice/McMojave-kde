@@ -32,6 +32,7 @@ COLOR_VARIANTS=('' '-light')
 [[ ! -d ${LOOKFEEL_DIR} ]] && mkdir -p ${LOOKFEEL_DIR}
 [[ ! -d ${KVANTUM_DIR} ]] && mkdir -p ${KVANTUM_DIR}
 [[ ! -d ${WALLPAPER_DIR} ]] && mkdir -p ${WALLPAPER_DIR}
+[[ ! -d ${LAYOUT_DIR} ]] && mkdir -p ${LAYOUT_DIR}
 
 install() {
   local name=${1}
